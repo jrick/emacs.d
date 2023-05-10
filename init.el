@@ -56,7 +56,8 @@
 (tool-bar-mode 0)
 (setq-default cursor-type 'bar
 	      fill-column 80
-	      show-trailing-whitespace t)
+	      show-trailing-whitespace t
+	      word-wrap t)
 (setq inhibit-startup-message t
       mouse-autoselect-window t
       mouse-wheel-scroll-amount '(10)
