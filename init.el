@@ -82,7 +82,8 @@
 
 ;; theme
 (set-face-attribute 'default nil
-		    :font "Go Mono:pixelsize=14"
+		    :font "Go Mono"
+		    :height 105
 		    :background "#fff2ff"
 		    :foreground "#180818")
 (set-face-attribute 'mode-line nil :background "#edd8ed" :box nil)
