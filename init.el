@@ -43,6 +43,7 @@
 				  (ansi-term "/bin/ksh")))
 (global-set-key (kbd "C-c C-v") 'flymake-goto-next-error)
 (global-set-key (kbd "C-c m") 'man)
+(global-set-key (kbd "M-z") 'zap-up-to-char)
 (global-set-key (kbd "<f5>") 'compile)
 (global-set-key (kbd "<f6>") 'recompile)
 
