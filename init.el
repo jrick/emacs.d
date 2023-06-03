@@ -32,6 +32,10 @@
 	 (go-mode . my-go-compile)
 	 (before-save . gofmt-before-save)))
 
+(use-package racket-mode)
+
+(use-package slime)
+
 (use-package vc-got)
 
 (use-package doom-modeline
@@ -39,7 +43,8 @@
 
 ;; keybindings
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-(global-set-key (kbd "C-c C-t") (lambda () (interactive)
+(global-set-key (kbd "C-c C-t") (lambda ()
+				  (interactive)
 				  (ansi-term "/bin/ksh")))
 (global-set-key (kbd "C-c C-v") 'flymake-goto-next-error)
 (global-set-key (kbd "C-c m") 'man)
@@ -67,14 +72,17 @@
       mouse-drag-copy-region t
       mouse-yank-at-point t
       require-final-newline t
-      select-active-regions t)
+      select-active-regions t
+      inferior-lisp-program "sbcl")
 
 (dolist (hook '(org-mode-hook
 		term-mode-hook
 		shell-mode-hook
-		eshell-mode-hook))
+		eshell-mode-hook
+		racket-repl-mode
+		slime-repl-mode))
   (add-hook hook (lambda ()
-		   (display-line-numbers-mode 0)
+		   (display-line-numbers-mode nil)
 		   (setq show-trailing-whitespace nil))))
 
 ;; backups
