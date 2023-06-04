@@ -59,6 +59,8 @@
 (blink-cursor-mode 0)
 (column-number-mode 1)
 (electric-pair-mode 1)
+(setq show-paren-delay 0)
+(show-paren-mode 1)
 (global-display-line-numbers-mode 1)
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
