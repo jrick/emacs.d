@@ -56,6 +56,7 @@
 (global-set-key (kbd "<f5>") 'compile)
 (global-set-key (kbd "<f6>") 'recompile)
 
+(abbrev-mode 1)
 (blink-cursor-mode 0)
 (column-number-mode 1)
 (electric-pair-mode 1)
