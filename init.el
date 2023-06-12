@@ -107,7 +107,8 @@
 (set-face-attribute 'mode-line-inactive nil :foreground "#680048" :box nil)
 (custom-set-faces
  '(font-lock-comment-face ((t (:foreground "#680048"))))
- '(font-lock-string-face ((t (:foreground "#195519")))))
+ '(font-lock-string-face ((t (:foreground "#195519"))))
+ '(variable-pitch ((t (:family "Go")))))
 (defun boring-font-lock ()
   "Disable keyword highlighting"
   (interactive)
