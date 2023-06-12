@@ -108,7 +108,7 @@
 (custom-set-faces
  '(font-lock-comment-face ((t (:foreground "#680048"))))
  '(font-lock-string-face ((t (:foreground "#195519"))))
- '(variable-pitch ((t (:family "Go")))))
+ '(variable-pitch ((t (:family "Go" :height 110)))))
 (defun boring-font-lock ()
   "Disable keyword highlighting"
   (interactive)
