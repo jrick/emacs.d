@@ -83,7 +83,8 @@
       select-active-regions t
       inferior-lisp-program "sbcl")
 
-(dolist (hook '(org-mode-hook
+(dolist (hook '(eww-mode-hook
+                org-mode-hook
                 term-mode-hook
                 shell-mode-hook
                 eshell-mode-hook
