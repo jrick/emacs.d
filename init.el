@@ -68,7 +68,7 @@
 (set-fringe-mode 5)
 (tool-bar-mode 0)
 (setq-default cursor-type 'bar
-              fill-column 80
+              fill-column 78
               indent-tabs-mode nil
               show-trailing-whitespace t
               word-wrap t)
