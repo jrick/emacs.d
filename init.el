@@ -94,6 +94,11 @@
                    (display-line-numbers-mode nil)
                    (setq show-trailing-whitespace nil))))
 
+(defun sort-fields-nocase ()
+  (interactive)
+  (let ((sort-fold-case t))
+    (call-interactively 'sort-fields)))
+
 ;; backups
 (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
                                                "backups"))))
