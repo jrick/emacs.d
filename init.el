@@ -99,6 +99,14 @@
   (let ((sort-fold-case t))
     (call-interactively 'sort-fields)))
 
+(defun fill-paragraph-to (column)
+  "Call fill-paragraph with fill-column taken as prefix argument."
+  (interactive "P")
+  (let ((fill-column (or column fill-column))
+        (current-prefix-arg nil)) ; avoid justifying
+    (call-interactively 'fill-paragraph)))
+(global-set-key (kbd "M-q") 'fill-paragraph-to)
+
 ;; backups
 (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
                                                "backups"))))
