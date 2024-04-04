@@ -19,7 +19,8 @@
               ("C-c d" . lsp-describe-thing-at-point)
               ("C-c a" . lsp-execute-code-action))
   :config
-  (lsp-enable-which-key-integration t))
+  (lsp-enable-which-key-integration t)
+  (setq lsp-go-build-flags ["-tags=rpctest"]))
 
 (use-package company
   :config
