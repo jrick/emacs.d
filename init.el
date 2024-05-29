@@ -27,6 +27,10 @@
   (setq company-minimum-prefix-length 1
         company-idle-delay 0.0))
 
+(use-package editor-config
+  :config
+  (editorconfig-mode 1))
+
 (use-package go-mode
   :init
   (defun my-go-compile ()
